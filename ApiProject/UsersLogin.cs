@@ -2,6 +2,7 @@
 
 namespace ApiProject
 {
+    //A clearer name is, for example, LoginUser (it holds one user's login details), and Password instead of Pass
     public class UsersLogin
     {
         [Required]
