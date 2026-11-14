@@ -9,6 +9,7 @@ namespace ApiProject.Controllers
 
     [Route("api/[controller]")]
     [ApiController]
+    //The assignment asks to split the code into four projects: the API, Entities, Services and Repositories
     public class UsersController : ControllerBase
     {
         static string filePath = "user.txt";
@@ -24,6 +25,7 @@ namespace ApiProject.Controllers
         [HttpGet("{id}")]
         public string Get(int id)
         {
+            //Why does GET by id return a fixed value? It should read the file and return the user with this id (or NoContent)
             return "value";
         }
 
@@ -56,6 +58,7 @@ namespace ApiProject.Controllers
 
         // PUT api/<UsersController>/5
         [HttpPut("{id}")]
+        //The assignment asks PUT to return Ok(): change void to IActionResult and return Ok() at the end
         public void Put(int id, [FromBody]Users users)
         {
             string textToReplace = string.Empty;
