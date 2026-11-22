@@ -56,6 +56,7 @@ const login = async () => {
         }
     }
     catch (e) {
+        //Is 'massage' spelled right? The Error object's property is 'message'
         alert(e.massage)
     }
 }
